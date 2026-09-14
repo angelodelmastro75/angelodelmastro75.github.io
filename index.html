@@ -77,7 +77,11 @@
     .contact{background:var(--accent);color:#1c1209;text-align:center}
     .contact h2{font:700 clamp(2.6rem,6vw,5.2rem)/.98 Georgia,serif;margin:0 auto 22px;max-width:850px;letter-spacing:-.05em}
     .contact p{font-size:1.1rem;max-width:620px;margin:0 auto 30px}
-    .contact .btn{background:#1c140e;color:#fff}\n    .social-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:14px}\n    .social-actions .btn:hover{transform:translateY(-2px);background:#302218}\n    .social-actions .whatsapp{background:#173d2b;color:#fff}\n    .social-actions .whatsapp:hover{background:#20583d}
+    .contact .btn{background:#1c140e;color:#fff}
+    .social-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:14px}
+    .social-actions .btn:hover{transform:translateY(-2px);background:#302218}
+    .social-actions .whatsapp{background:#173d2b;color:#fff}
+    .social-actions .whatsapp:hover{background:#20583d}
     footer{padding:28px 0;color:#aa9e92;font-size:.88rem}
     .footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center}
     @media(max-width:800px){
@@ -87,6 +91,29 @@
       .values{grid-template-columns:1fr}.footer-row{display:block;text-align:center}.footer-row p{margin:6px}
       section{padding:76px 0}
     }
+
+    #cnc{scroll-margin-top:100px}
+    .cnc-cover{display:block}
+    .cnc-cover img{width:100%;height:100%;object-fit:cover;object-position:center 38%}
+    .cnc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+    .cnc-work{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+    .compare{--split:50%;position:relative;aspect-ratio:2/3;background:#100e0b;overflow:hidden}
+    .compare img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none}
+    .compare .day{clip-path:inset(0 calc(100% - var(--split)) 0 0)}
+    .compare-line{position:absolute;top:0;bottom:0;left:var(--split);width:2px;background:white;transform:translateX(-50%);pointer-events:none}
+    .compare-line:after{content:"↔";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;display:grid;place-items:center;border:2px solid white;border-radius:50%;background:#211a14;color:white;font-size:24px}
+    .compare-tag{position:absolute;top:14px;padding:5px 12px;background:rgba(0,0,0,.7);border-radius:99px;font-size:.8rem;pointer-events:none}
+    .compare-tag.light-label{left:14px}.compare-tag.dark-label{right:14px}
+    .compare input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize;touch-action:pan-y}
+    .compare:focus-within{outline:3px solid var(--accent-2);outline-offset:-3px}
+    .cnc-work figcaption{padding:24px}
+    .cnc-work h4{font:700 1.6rem Georgia,serif;margin:0 0 10px}
+    .cnc-work p{color:var(--muted);margin:0 0 14px}
+    .original-links{display:flex;gap:20px;flex-wrap:wrap;font-size:.9rem}
+    .original-links a{text-decoration:underline;text-underline-offset:4px;color:var(--accent-2)}
+    .cnc-title{font:700 2rem Georgia,serif;margin:0 0 14px}
+    .compare-help{color:var(--muted);margin:0 0 26px}
+    @media(max-width:800px){.cnc-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -135,9 +162,7 @@
             <div class="service-body"><h3>Incisione laser</h3><p>Decorazioni, targhe, orologi, scritte e regali personalizzati incisi o tagliati con precisione.</p></div>
           </article>
           <article class="service">
-            <div class="visual"><span class="number">02</span>
-              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><path d="M25 25h50v50H25z"/><circle cx="50" cy="50" r="15"/><path d="M50 12v23M50 65v23M12 50h23M65 50h23"/></svg>
-            </div>
+            <a class="visual cnc-cover" href="#cnc" aria-label="Guarda i lavori CNC"><img src="IMG_20260623_214613.jpg" alt="Rilievo di un volto in legno alla luce, copertina dei lavori CNC" loading="lazy"><span class="number">02</span></a>
             <div class="service-body"><h3>Lavorazioni CNC</h3><p>Rilievi, incisioni e lavorazioni su legno, progettate digitalmente e rifinite con attenzione.</p></div>
           </article>
           <article class="service">
@@ -154,16 +179,36 @@
       <div class="container">
         <div class="section-head">
           <div><div class="eyebrow">Portfolio</div><h2>Le mie creazioni.</h2></div>
-          <p>Questi spazi sono pronti per le fotografie dei tuoi lavori. Le inseriremo nella prossima modifica.</p>
+          <p>Lavorazioni su legno e dettagli che si illuminano al buio: scopri come cambia ogni creazione.</p>
         </div>
-        <div class="gallery-grid">
-          <div class="shot"><span>Laser</span></div>
-          <div class="shot"><span>CNC</span></div>
-          <div class="shot"><span>Stampa 3D</span></div>
-          <div class="shot"><span>Personalizzati</span></div>
-        </div>
-      </div>
-    </section>
+        <div id="cnc">
+<h3 class="cnc-title">Lavori CNC</h3>
+<p class="compare-help" id="compare-help">Trascina il cursore sulle foto per passare dalla luce al buio. Puoi usare anche le frecce della tastiera. Le foto sono scattate da angolazioni leggermente diverse.</p>
+<div class="cnc-grid"><figure class="cnc-work">
+<div class="compare">
+<img src="IMG_20260623_214636.jpg" alt="Volto dagli occhi luminosi al buio" loading="lazy">
+<img class="day" src="IMG_20260623_214613.jpg" alt="Volto dagli occhi luminosi alla luce" loading="lazy">
+<span class="compare-tag light-label">Luce</span><span class="compare-tag dark-label">Buio</span>
+<span class="compare-line" aria-hidden="true"></span>
+<input type="range" min="0" max="100" value="50" aria-label="Confronto luce e buio: Volto dagli occhi luminosi" aria-describedby="compare-help" aria-valuetext="50% luce, 50% buio">
+</div>
+<figcaption><h4>Volto dagli occhi luminosi</h4><p>Rilievo CNC su legno con occhi dipinti con vernice fosforescente (glow in the dark), che si illumina al buio.</p>
+<div class="original-links"><a href="IMG_20260623_214613.jpg" target="_blank" rel="noopener">Foto alla luce</a><a href="IMG_20260623_214636.jpg" target="_blank" rel="noopener">Foto al buio</a></div>
+</figcaption></figure>
+<figure class="cnc-work">
+<div class="compare">
+<img src="IMG_20260623_214801.jpg" alt="Lupo e luna al buio" loading="lazy">
+<img class="day" src="IMG_20260623_214743.jpg" alt="Lupo e luna alla luce" loading="lazy">
+<span class="compare-tag light-label">Luce</span><span class="compare-tag dark-label">Buio</span>
+<span class="compare-line" aria-hidden="true"></span>
+<input type="range" min="0" max="100" value="50" aria-label="Confronto luce e buio: Lupo e luna" aria-describedby="compare-help" aria-valuetext="50% luce, 50% buio">
+</div>
+<figcaption><h4>Lupo e luna</h4><p>Rilievo CNC su legno con luna dipinta con vernice fosforescente (glow in the dark), per un effetto luminoso al buio.</p>
+<div class="original-links"><a href="IMG_20260623_214743.jpg" target="_blank" rel="noopener">Foto alla luce</a><a href="IMG_20260623_214801.jpg" target="_blank" rel="noopener">Foto al buio</a></div>
+</figcaption></figure></div>
+</div>
+</div>
+</section>
 
     <section id="chisono">
       <div class="container about-grid">
@@ -200,5 +245,15 @@
       <p>Laser · CNC · Stampa 3D</p>
     </div>
   </footer>
+<script>
+document.querySelectorAll('.compare input').forEach(function(input){
+function update(){
+input.parentElement.style.setProperty('--split', input.value + '%');
+input.setAttribute('aria-valuetext', input.value + '% luce, ' + (100 - Number(input.value)) + '% buio');
+}
+input.addEventListener('input', update);
+update();
+});
+</script>
 </body>
 </html>
