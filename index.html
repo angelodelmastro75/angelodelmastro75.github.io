@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Creazioni personalizzate realizzate con laser, CNC e stampa 3D.">
   <meta name="theme-color" content="#17130f">
-  <title>Angelo Creazioni | Laser, CNC e Stampa 3D</title>
+  <title>ADM Creazioni | Laser, CNC e Stampa 3D</title>
   <style>
     :root{
       --bg:#17130f;--surface:#221c16;--surface-2:#2d241c;--paper:#f4efe7;
@@ -114,15 +114,38 @@
     .cnc-title{font:700 2rem Georgia,serif;margin:0 0 14px}
     .compare-help{color:var(--muted);margin:0 0 26px}
     @media(max-width:800px){.cnc-grid{grid-template-columns:1fr}}
-  </style>
+  
+.brand-mark{font-size:.65rem;letter-spacing:0;flex-shrink:0}
+.monogram{font-size:clamp(4rem,10vw,7rem)}
+#tecniche{scroll-margin-top:90px}
+.tech-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.tech-card{background:white;border-radius:22px;overflow:hidden;box-shadow:0 12px 35px #31221414}
+.tech-photo{display:block;padding:22px;border-bottom:1px solid #eee5dc}
+.tech-photo img{width:100%;height:225px;object-fit:contain}
+.tech-copy{padding:25px}
+.tech-copy h3{font:700 1.7rem/1.15 Georgia,serif;margin:0 0 12px}
+.tech-copy p{color:#6c5d50}
+.tech-model{font-weight:750;font-size:.9rem}
+.tech-source{font-size:.8rem;text-decoration:underline;color:#795334;text-underline-offset:3px}
+.tech-foot{margin-top:28px;padding:24px;background:#ebe3d8;border-left:3px solid var(--accent);border-radius:0 12px 12px 0;color:#554638}
+.tech-videos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:24px}
+.tech-video{margin:0;min-width:0}
+.tech-video iframe{display:block;width:100%;aspect-ratio:16/9;border:0;border-radius:16px;background:#211a14}
+.tech-video figcaption{font-size:.9rem;color:#6c5d50;margin-top:12px}
+.tech-video a{text-decoration:underline}
+.tech-video-title{font:700 2rem Georgia,serif;margin:44px 0 14px}
+@media(max-width:950px){.tech-grid{grid-template-columns:1fr}}
+@media(max-width:800px){.tech-videos{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
   <header class="topbar">
     <nav class="container" aria-label="Navigazione principale">
-      <a class="brand" href="#home"><span class="brand-mark">A</span> ANGELO CREAZIONI</a>
+      <a class="brand" href="#home"><span class="brand-mark">ADM</span> ADM CREAZIONI</a>
       <div class="menu">
         <a href="#creazioni">Creazioni</a>
         <a href="#galleria">Galleria</a>
+        <a href="#tecniche">Tecniche</a>
         <a href="#chisono">Chi sono</a>
         <a href="#contatti">Contatti</a>
       </div>
@@ -141,8 +164,8 @@
             <a class="btn btn-ghost" href="#contatti">Parliamo della tua idea</a>
           </div>
         </div>
-        <div class="hero-art" aria-label="Monogramma Angelo Creazioni">
-          <div class="monogram">AC</div>
+        <div class="hero-art" aria-label="Monogramma ADM Creazioni">
+          <div class="monogram">ADM</div>
           <div class="art-caption">Fatto con passione</div>
         </div>
       </div>
@@ -243,7 +266,16 @@
 </div>
 </section>
 
-    <section id="chisono">
+    <section class="light" id="tecniche"><div class="container">
+<div class="section-head"><div><div class="eyebrow" style="color:#a65f25">Tecniche e strumenti</div><h2>Come nascono<br>le creazioni.</h2></div><p>Dal disegno al pezzo finito: tre tecniche complementari per dare forma alle idee, valorizzare il legno e creare oggetti personalizzati.</p></div>
+<div class="tech-grid"><article class="tech-card"><a class="tech-photo" href="https://www.crealityfalcon.com/products/laser-engraver-cutter-falcon2-40w-engraving-machine" target="_blank" rel="noopener"><img src="https://www.crealityfalcon.com/cdn/shop/files/laserengravercutter40wframecrealityfalcon203.jpg?v=1757990697&amp;width=1000" alt="Creality Falcon2 · 40 W" loading="lazy"></a><div class="tech-copy"><h3>Incisione e taglio laser</h3><p class="tech-model">Creality Falcon2 · 40 W</p><p>Un fascio laser concentrato segue il disegno digitale per incidere la superficie o tagliare il materiale. Potenza, velocità e numero di passaggi vengono adattati al progetto. La Falcon2 utilizza un laser a diodi da 40 W e un sistema di assistenza ad aria, che aiuta a mantenere pulita la zona di lavorazione.</p><p><strong>Per le mie creazioni:</strong> Targhe, orologi, scritte, sagome e decorazioni personalizzate.</p><a class="tech-source" href="https://www.crealityfalcon.com/products/laser-engraver-cutter-falcon2-40w-engraving-machine" target="_blank" rel="noopener">Foto e informazioni: Creality Falcon</a></div></article>
+<article class="tech-card"><a class="tech-photo" href="https://www.lunyeecnc.com/products/3018-pro-ultra-cnc-router-machine-for-diy-engraving-dreams" target="_blank" rel="noopener"><img src="https://cdn.shopify.com/s/files/1/0614/0379/1500/files/3018-pro-ultra_1.jpg?v=1766107186" alt="Lunyee 3018 Pro Ultra" loading="lazy"></a><div class="tech-copy"><h3>Fresatura CNC</h3><p class="tech-model">Lunyee 3018 Pro Ultra</p><p>Una fresa rotante asporta il materiale seguendo un percorso programmato sui tre assi. Il lavoro passa dalla sgrossatura alla finitura con utensili più piccoli, per far emergere forme e dettagli. La 3018 Pro Ultra ha una struttura in metallo e un mandrino da 500 W.</p><p><strong>Per le mie creazioni:</strong> Rilievi, quadri decorativi e incisioni su legno, da rifinire e colorare.</p><a class="tech-source" href="https://www.lunyeecnc.com/products/3018-pro-ultra-cnc-router-machine-for-diy-engraving-dreams" target="_blank" rel="noopener">Foto e informazioni: Lunyee</a></div></article>
+<article class="tech-card"><a class="tech-photo" href="https://store.anycubic.com/products/kobra-3-v2-combo" target="_blank" rel="noopener"><img src="https://store.anycubic.com/cdn/shop/files/Kobra3V2-4colors_95ee0e15-5e45-47ed-942f-81702c68e964.jpg?v=1761205192&amp;width=1000" alt="Anycubic Kobra 3 V2 + ACE Pro" loading="lazy"></a><div class="tech-copy"><h3>Stampa 3D multicolore</h3><p class="tech-model">Anycubic Kobra 3 V2 + ACE Pro</p><p>La stampante scalda un filamento e lo deposita in strati sottili, costruendo l'oggetto a partire da un modello 3D. La Kobra 3 V2 dispone di livellamento automatico del piano. Con una unità ACE Pro si possono gestire fino a quattro colori e asciugare il filamento anche durante la stampa.</p><p><strong>Per le mie creazioni:</strong> Oggetti decorativi, portachiavi, accessori e componenti su misura, anche multicolore.</p><a class="tech-source" href="https://store.anycubic.com/products/kobra-3-v2-combo" target="_blank" rel="noopener">Foto e informazioni: Anycubic</a></div></article></div>
+<p class="tech-foot"><strong>La tecnologia incontra la cura artigianale.</strong> Ogni progetto parte da un'idea: scelgo la tecnica adatta, preparo il disegno e curo le finiture. Nei lavori fosforescenti, l'effetto al buio nasce dalla vernice applicata ai dettagli.</p>
+<h3 class="tech-video-title">Le macchine in azione</h3><p>Due video dal web per vedere più da vicino il funzionamento delle macchine. Sono dimostrazioni di autori esterni.</p><div class="tech-videos"><figure class="tech-video"><iframe src="https://www.youtube-nocookie.com/embed/f2clHkZnwsw" title="Falcon2 40 W: montaggio e prima lavorazione (inglese)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><figcaption>Falcon2 40 W: montaggio e prima lavorazione (inglese). <a href="https://www.youtube.com/watch?v=f2clHkZnwsw" target="_blank" rel="noopener">Guarda su YouTube</a></figcaption></figure>
+<figure class="tech-video"><iframe src="https://www.youtube-nocookie.com/embed/f_0T3BodOVQ" title="Lunyee 3018 Pro Ultra: prova di fresatura (italiano), video segnalato da Lunyee" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><figcaption>Lunyee 3018 Pro Ultra: prova di fresatura (italiano), video segnalato da Lunyee. <a href="https://www.youtube.com/watch?v=f_0T3BodOVQ" target="_blank" rel="noopener">Guarda su YouTube</a></figcaption></figure></div>
+</div></section>
+<section id="chisono">
       <div class="container about-grid">
         <div class="stamp"><div class="stamp-inner">Fatto<br>a mano</div></div>
         <div class="about-copy">
@@ -265,8 +297,8 @@
         <p>Raccontami cosa vorresti creare oppure seguimi sui social per vedere nuove lavorazioni e progetti.</p>
         <div class="social-actions">
           <a class="btn whatsapp" href="https://wa.me/393385053005?text=Ciao%20Angelo%2C%20ho%20visto%20le%20tue%20creazioni%20e%20vorrei%20chiederti%20un%27informazione." target="_blank" rel="noopener" aria-label="Contatta Angelo su WhatsApp">WhatsApp</a>
-          <a class="btn" href="https://www.facebook.com/profile.php?id=100080481115922" target="_blank" rel="noopener" aria-label="Pagina Facebook di Angelo Creazioni">Facebook</a>
-          <a class="btn" href="https://www.instagram.com/angelodm75/" target="_blank" rel="noopener" aria-label="Profilo Instagram di Angelo Creazioni">Instagram</a>
+          <a class="btn" href="https://www.facebook.com/profile.php?id=100080481115922" target="_blank" rel="noopener" aria-label="Pagina Facebook di ADM Creazioni">Facebook</a>
+          <a class="btn" href="https://www.instagram.com/angelodm75/" target="_blank" rel="noopener" aria-label="Profilo Instagram di ADM Creazioni">Instagram</a>
         </div>
       </div>
     </section>
@@ -274,7 +306,7 @@
 
   <footer>
     <div class="container footer-row">
-      <p>© 2026 Angelo Creazioni</p>
+      <p>© 2026 ADM Creazioni</p>
       <p>Laser · CNC · Stampa 3D</p>
     </div>
   </footer>
