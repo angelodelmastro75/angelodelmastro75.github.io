@@ -137,6 +137,8 @@
 @media(max-width:950px){.tech-grid{grid-template-columns:1fr}}
 @media(max-width:800px){.tech-videos{grid-template-columns:1fr}}
 .cnc-static-photo{display:block;background:#17130f}.cnc-static-photo img{width:100%;height:520px;object-fit:contain}.cnc-static-photo:focus-visible{outline:3px solid var(--accent-2);outline-offset:-3px}@media(max-width:800px){.cnc-static-photo img{height:auto;max-height:620px;object-fit:contain}}
+
+#laser,#natale{scroll-margin-top:100px}.portfolio-links{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 36px}.natale-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.natale-card{margin:0;overflow:hidden;border:1px solid var(--line);border-radius:20px;background:var(--surface)}.natale-card>a{display:block;background:white}.natale-card img{width:100%;height:310px;object-fit:contain}.natale-card figcaption{padding:20px}.natale-card h5{font:700 1.3rem Georgia,serif;margin:0}.natale-card a:focus-visible{outline:3px solid var(--accent-2);outline-offset:-3px}.natale-heading{font:700 2.6rem Georgia,serif;margin:12px 0}.natale-video{margin:28px 0 70px;max-width:520px}.natale-video video{display:block;width:100%;max-height:600px;border-radius:18px;background:#100e0b}.natale-video figcaption{color:var(--muted);margin-top:12px}.laser-cover{display:block;background:white}.laser-cover img{width:100%;height:100%;object-fit:contain}@media(max-width:950px){.natale-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.natale-grid{grid-template-columns:1fr}.natale-card img{height:340px}}
 </style>
 </head>
 <body>
@@ -180,9 +182,7 @@
         </div>
         <div class="grid">
           <article class="service">
-            <div class="visual"><span class="number">01</span>
-              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><path d="M18 75 50 20l32 55H18Z"/><path d="M36 75 50 51l14 24M50 20v18"/></svg>
-            </div>
+            <a class="visual laser-cover" href="#natale" aria-label="Scopri le decorazioni laser di Natale"><img src="images/natale/foto-4.jpg" alt="Alberelli natalizi realizzati al laser" loading="lazy"></a>
             <div class="service-body"><h3>Incisione laser</h3><p>Decorazioni, targhe, orologi, scritte e regali personalizzati incisi o tagliati con precisione.</p></div>
           </article>
           <article class="service">
@@ -205,7 +205,23 @@
           <div><div class="eyebrow">Portfolio</div><h2>Le mie creazioni.</h2></div>
           <p>Lavorazioni su legno e dettagli che si illuminano al buio: scopri come cambia ogni creazione.</p>
         </div>
-        <div id="cnc">
+        <div class="portfolio-links"><a class="btn btn-ghost" href="#natale">Laser · Natale</a><a class="btn btn-ghost" href="#cnc">Lavori CNC</a></div>
+<div id="laser"><h3 class="cnc-title">Creazioni laser</h3><div id="natale"><h4 class="natale-heading">Natale</h4><p class="compare-help">Decorazioni per l’albero, piccoli paesaggi e idee regalo personalizzate. Tocca una foto per vederla più grande.</p>
+<div class="natale-grid"><figure class="natale-card"><a href="images/natale/foto-1.jpg" target="_blank" rel="noopener" aria-label="Ingrandisci: Palline con nome"><img src="images/natale/foto-1.jpg" alt="Palline con nome" loading="lazy" decoding="async"></a><figcaption><h5>Palline con nome</h5></figcaption></figure>
+<figure class="natale-card"><a href="images/natale/foto-2.jpg" target="_blank" rel="noopener" aria-label="Ingrandisci: Gnomi da appendere"><img src="images/natale/foto-2.jpg" alt="Gnomi da appendere" loading="lazy" decoding="async"></a><figcaption><h5>Gnomi da appendere</h5></figcaption></figure>
+<figure class="natale-card"><a href="images/natale/foto-3.jpg" target="_blank" rel="noopener" aria-label="Ingrandisci: Gnomi colorati"><img src="images/natale/foto-3.jpg" alt="Gnomi colorati" loading="lazy" decoding="async"></a><figcaption><h5>Gnomi colorati</h5></figcaption></figure>
+<figure class="natale-card"><a href="images/natale/foto-4.jpg" target="_blank" rel="noopener" aria-label="Ingrandisci: Alberelli decorativi"><img src="images/natale/foto-4.jpg" alt="Alberelli decorativi" loading="lazy" decoding="async"></a><figcaption><h5>Alberelli decorativi</h5></figcaption></figure>
+<figure class="natale-card"><a href="images/natale/foto-5.jpg" target="_blank" rel="noopener" aria-label="Ingrandisci: Lanterna natalizia"><img src="images/natale/foto-5.jpg" alt="Lanterna natalizia" loading="lazy" decoding="async"></a><figcaption><h5>Lanterna natalizia</h5></figcaption></figure>
+<figure class="natale-card"><a href="images/natale/foto-6.jpg" target="_blank" rel="noopener" aria-label="Ingrandisci: Stelle e Babbi Natale"><img src="images/natale/foto-6.jpg" alt="Stelle e Babbi Natale" loading="lazy" decoding="async"></a><figcaption><h5>Stelle e Babbi Natale</h5></figcaption></figure>
+<figure class="natale-card"><a href="images/natale/foto-7.jpg" target="_blank" rel="noopener" aria-label="Ingrandisci: Palline natalizie"><img src="images/natale/foto-7.jpg" alt="Palline natalizie" loading="lazy" decoding="async"></a><figcaption><h5>Palline natalizie</h5></figcaption></figure>
+<figure class="natale-card"><a href="images/natale/foto-8.jpg" target="_blank" rel="noopener" aria-label="Ingrandisci: Albero di fiocchi di neve"><img src="images/natale/foto-8.jpg" alt="Albero di fiocchi di neve" loading="lazy" decoding="async"></a><figcaption><h5>Albero di fiocchi di neve</h5></figcaption></figure>
+<figure class="natale-card"><a href="images/natale/foto-9.jpg" target="_blank" rel="noopener" aria-label="Ingrandisci: Albero con villaggio"><img src="images/natale/foto-9.jpg" alt="Albero con villaggio" loading="lazy" decoding="async"></a><figcaption><h5>Albero con villaggio</h5></figcaption></figure>
+<figure class="natale-card"><a href="images/natale/foto-10.jpg" target="_blank" rel="noopener" aria-label="Ingrandisci: Albero Buon Natale"><img src="images/natale/foto-10.jpg" alt="Albero Buon Natale" loading="lazy" decoding="async"></a><figcaption><h5>Albero Buon Natale</h5></figcaption></figure>
+<figure class="natale-card"><a href="images/natale/foto-11.jpg" target="_blank" rel="noopener" aria-label="Ingrandisci: Slitta di Babbo Natale"><img src="images/natale/foto-11.jpg" alt="Slitta di Babbo Natale" loading="lazy" decoding="async"></a><figcaption><h5>Slitta di Babbo Natale</h5></figcaption></figure>
+<figure class="natale-card"><a href="images/natale/foto-12.jpg" target="_blank" rel="noopener" aria-label="Ingrandisci: Palline in legno personalizzate"><img src="images/natale/foto-12.jpg" alt="Palline in legno personalizzate" loading="lazy" decoding="async"></a><figcaption><h5>Palline in legno personalizzate</h5></figcaption></figure></div>
+<p><a class="btn btn-primary" href="#contatti">Chiedimi una decorazione personalizzata</a></p>
+<figure class="natale-video"><video controls playsinline preload="none" poster="images/natale/video-poster.jpg"><source src="images/natale/albero-luminoso.mp4" type="video/mp4">Il tuo browser non supporta il video. <a href="images/natale/albero-luminoso.mp4">Apri il video</a></video><figcaption>Albero natalizio con luci: guarda il video.</figcaption></figure></div></div>
+<div id="cnc">
 <h3 class="cnc-title">Lavori CNC</h3>
 <p class="compare-help" id="compare-help">Trascina il cursore sulle foto per passare dalla luce al buio. Puoi usare anche le frecce della tastiera. Le foto sono scattate da angolazioni leggermente diverse.</p>
 <div class="cnc-grid"><figure class="cnc-work">
