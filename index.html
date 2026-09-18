@@ -6,6 +6,28 @@
   <meta name="description" content="Creazioni personalizzate realizzate con laser, CNC e stampa 3D.">
   <meta name="theme-color" content="#17130f">
   <title>ADM Creazioni | Laser, CNC e Stampa 3D</title>
+  #halloween{
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+}
+
+#halloween::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(rgba(29,23,18,.82), rgba(29,23,18,.82)),
+    url('images/halloween/foto-06.webp') center center / contain no-repeat;
+  opacity:.28;
+  pointer-events:none;
+  z-index:0;
+}
+
+#halloween > *{
+  position:relative;
+  z-index:1;
+}
   <style>
     :root{
       --bg:#17130f;--surface:#221c16;--surface-2:#2d241c;--paper:#f4efe7;
