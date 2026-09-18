@@ -7,29 +7,7 @@
   <meta name="theme-color" content="#17130f">
   <title>ADM Creazioni | Laser, CNC e Stampa 3D</title>
   <style>
-#halloween{
-  position:relative;
-  overflow:hidden;
-  isolation:isolate;
-}
-
-#halloween::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(rgba(29,23,18,.82), rgba(29,23,18,.82)),
-    url('images/halloween/foto-06.webp') center center / contain no-repeat;
-  opacity:.28;
-  pointer-events:none;
-  z-index:0;
-}
-
-#halloween > *{
-  position:relative;
-  z-index:1;
-}
-    :root{
+:root{
       --bg:#17130f;--surface:#221c16;--surface-2:#2d241c;--paper:#f4efe7;
       --ink:#211a14;--muted:#bfb2a3;--accent:#d8914b;--accent-2:#f0ba78;
       --line:rgba(255,255,255,.11);--radius:22px;--shadow:0 24px 70px rgba(0,0,0,.28)
@@ -162,6 +140,9 @@
 
 #laser,#natale,#halloween{scroll-margin-top:100px}.portfolio-links{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 36px}.natale-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.natale-card{margin:0;overflow:hidden;border:1px solid var(--line);border-radius:20px;background:var(--surface)}.natale-card>a{display:block;background:white}.natale-card img{width:100%;height:310px;object-fit:contain}.natale-card figcaption{padding:20px}.natale-card h5{font:700 1.3rem Georgia,serif;margin:0}.natale-card a:focus-visible{outline:3px solid var(--accent-2);outline-offset:-3px}.natale-heading{font:700 2.6rem Georgia,serif;margin:12px 0}.natale-video{margin:28px 0 70px;max-width:520px}.natale-video video{display:block;width:100%;max-height:600px;border-radius:18px;background:#100e0b}.natale-video figcaption{color:var(--muted);margin-top:12px}.laser-cover{display:block;background:white}.laser-cover img{width:100%;height:100%;object-fit:contain}@media(max-width:950px){.natale-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.natale-grid{grid-template-columns:1fr}.natale-card img{height:340px}}
 #altri-lavori .natale-card img{padding:14px;background:#fff}
+
+.threed-cover{display:block;background:#17130f}
+.threed-cover img{width:100%;height:100%;object-fit:cover;object-position:center}
 </style>
 </head>
 <body>
@@ -213,9 +194,7 @@
             <div class="service-body"><h3>Lavorazioni CNC</h3><p>Rilievi, incisioni e lavorazioni su legno, progettate digitalmente e rifinite con attenzione.</p></div>
           </article>
           <article class="service">
-            <a class="visual" href="#halloween" aria-label="Guarda le creazioni 3D di Halloween"><span class="number">03</span>
-              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><path d="m50 15 30 17v36L50 85 20 68V32l30-17Z"/><path d="m20 32 30 18 30-18M50 50v35M34 24l30 18"/></svg>
-            </a>
+            <a class="visual threed-cover" href="#halloween" aria-label="Guarda le creazioni 3D di Halloween"><img src="images/halloween/foto-05.webp" alt="Fantasmino con palloncino realizzato in stampa 3D" loading="lazy"><span class="number">03</span></a>
             <div class="service-body"><h3>Stampa 3D</h3><p>Oggetti, accessori e componenti su misura trasformati da modello digitale a creazione concreta.</p></div>
           </article>
         </div>
